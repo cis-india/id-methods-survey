@@ -131,8 +131,8 @@ filters
   <tr>
     <td>
     <div class="checkbox">
-      <input type="checkbox" value=".con"/>
-      <label>content</label>
+      <input type="checkbox" value=".txt"/>
+      <label>text</label>
     </div>
     <div class="checkbox">
       <input type="checkbox" value=".vis"/>
@@ -147,10 +147,6 @@ filters
     <div class="checkbox">
       <input type="checkbox" value=".physical"/>
       <label>physical</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".network"/>
-      <label>network</label>
     </div>
     <div class="checkbox">
       <input type="checkbox" value=".combo"/>
@@ -180,67 +176,56 @@ filters
 </div>
 <div id="Container" class="container">
 <div class= 'lit_body'>
-<div class="mix dt physical">
+<div class="mix svm txt">
 <div class='card' id='c1'>
   <a class='open' href='#c1'>
-    Headline 1
+	  Detecting Latent User Properties in Social Media by Delip Rao and David Yarowsky (2010)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      9/11 was an inside job
+      Keywords: Academic Paper, Gender, Twitter, SVM, stacked SVM, Text Features
+      Classifier: support vector machine 
+      Features: text features (twitter user language in tweets and profiles) 
+<br><br>
+      Rao and Yarowsky set out to infer the gender, age and political orientation of Twitter users utilizing a stacked SVM classification method (combining SVM models) over a set of features. The authors emphasize the importance of language in identifying latent user attribute and propose a mixture of lexical and sociolinguistic-based feature for facilitating classification of Twitter users based on their informal textual communication. They utilize user’s status messages as a means of inference. They test and compare 3 different classification models: (1) a sociolinguistic feature model: where digital socio-linguistic cues such as the use of emoticons or certain punctuation (ellipses and exclamation marks) are used as features; (2) a lexical n-gram model: where the unigram and bigram of the tweet text was derived and; (3) a stacked model that’s features were derived from the predictions of the previous 2 models. For gender, they found that their sociolinguistic model (71.76% accuracy) performed better than their lexical model (68.70% accuracy) from the status text alone -- their stacked model did marginally better, achieving a 72.33 % accuracy rate. It should be noted that the authors also examined the use of social network structure (e.g. follower-followee ratio)  and communication behaviour (e.g. reply rate) and determined that they were not valuable in inferring latent author attributes. 
+
     </p>
   </div>
   </div>
 </div>
-<div class="mix svm name">
+<div class="mix other combo">
 <div class='card' id='c2'>
   <a class='open' href='#c2'>
-    Headline 2
+     Discriminating Gender on Twitter by John D. Burger, John Henderson, George Kim and Guido Zarella (2011) 
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      the queen is a lizard
+      Keywords: Academic Paper, Gender, Twitter, Combination Features
+      Classifier: balanced winnow2
+      Features: combination of features (twitter user language in tweets; profile data; names)
+      <br><br>
+      In this paper, Burger et al. attempt to identify the gender of Twitter users using four different fields: the language content of tweets as well as the full name, screen name, and description of the user from their profile.  They utilize more than 4 million tweets from 184 000 authors in various languages -- 66.7% of which were in English. Both word- and character-level n-grams from each of the previously mentioned fields are utilized in different combinations as inputs for the balanced winnow2 classifier. They performed a number of experiments with the winnow algorithm, evaluating the four fields in isolation and various combinations. Significantly, they compared the efficacy of their classifier results to human performance of the same activity conducted over a crowdsourcing platform. When considering a single tweet, the algorithm’s predictive accuracy was 67.8% compared to the 75.5% predictive accuracy achieved if all  of a user’s tweets were used. The combination of all four fields achieved an accuracy of 92.0% whereas the combination of tweets and screen name (the data most often available) achieved an accuracy of 81.4%. Surprisingly, all these were higher than the accuracy of the human raters, who predicted gender at an accuracy of 65.7% form individual messages. 
+
     </p>
   </div>
 </div>
 </div>
-<div class="mix svm combo">
+<div class="mix svm txt">
 <div class='card' id='c3'>
   <a class='open' href='#c3'>
-    Headline 3
+    Homophily and Latent Attribute Inference: Inferring Latent Attributes of Twitter Users from Neighbors by Faiyaz Al Zamal, Wendy Liu and Derek Ruths (2012)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      childish gambino and donald glover r the same person
-    </p>
-  </div>
-</div>
-</div>
-<div class="mix other">
-<div class='card' id='c4'>
-  <a class='open' href='#c4'>
-    Headline 4
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-   the cia killed kennedy 
-    </p>
-  </div>
-</div>
-</div>
-<div class="mix circle">
-<div class='card' id='c5'>
-  <a class='open' href='#c5'>
-    Headline 5
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    bless this post
+    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM, Homophily 
+    Classifier: support vector machine
+    Features: text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)
+    <br><br>
+    Zamal et al. infer a number of latent attributes -- specifically author, age and political affiliation -- of Twitter users based on their tweets. They further then evaluate the extent of which features related to Twitter user’s neighbourhoods (such as their closest and least popular friends on the platform) can improve the overall accuracy of inference. For gender ifnerrence, the authors used a labelled dataset of 400 Twitter users along with what Zamal et al. refer to as the user’s friends -- as opposed to their followers. For each of these users and their friends, the most recent 1000 tweets were collected and used for the classification model. While the augmenting features of user’s Twitter neighbourhoods was found to improve inference accuracy for both age and political orientation (by at least 3 percent), gender demonstrated no statistically significant improvement of inference. Zamal et al. concluded that improvements in inference using neighbourhood related features was dependent on the assoritivity of an attribute (with gender reported to have low assoritivity in online and physical networks). 
+
     </p>
   </div>
 </div>
