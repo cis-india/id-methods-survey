@@ -288,23 +288,25 @@ fieldset {
   text-decoration: none;
 }
 .card:target {
-  position: absolute;
-  top: 2em;
-  right: 0.5em;
-  animation: move .5s linear;
-  animation-fill-mode: forwards;
-  z-index: 999;
+    position: absolute;
+    top: 2em;
+    right: 0.5em;
+        animation: move .5s linear;
+        animation-fill-mode: forwards;
+    z-index: 999;
 }
+
 .card:target .open {
-  opacity: 0;
-  height: 0;
-  transition: opacity .5s,
+    opacity: 0;
+    height: 0;
+    transition: opacity .5s,
         height .5s .5s;
 }
+
 @keyframes move {
-  100% {
-    width: 98.6%;
-    height: 100%;
+    100% {
+        width: 98.6%;
+        height: 100%;
   }
 }
 
@@ -316,3 +318,8 @@ fieldset {
 .lead {
     font-size: 1.2rem;
 }
+
+.navbar-brand {
+    margin-left: 10.4rem;   
+}
+
