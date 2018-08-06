@@ -235,22 +235,22 @@ fieldset {
 }
 
 #c1 {
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c2 {
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c3 {
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c4 {
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c5{
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c6 {
-  background-color: #9999a1;
+  background-color: #3d3d3d;
 }
 #c7 {
   background-color: #9999a1;
@@ -281,7 +281,7 @@ fieldset {
 }
 .card {
   display: block;
-  width: 30vw;
+  width: 25vw;
   height: 10vw;
   overflow: hidden;
 }
