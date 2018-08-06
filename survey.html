@@ -367,41 +367,53 @@ filters
 </div>
 </div>
 <div class= 'lit_body'>
-<div class="mix triangle">
-<div class='card' id='c1'>
-  <a class='open' href='#c1'>
-    Headline 1
+<div class="mix multi other">
+<div class='card' id='c13'>
+  <a class='open' href='#c13'>
+     Inferring Gender from Names on the Web: A Comparative Evaluation of Gender Detection Methods by Fariba Karimi, Claudia Wagner, Florian Lemmerich, Mohsen Jadidi and Markus Strohmaier (2016)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      9/11 was an inside job
+      Keywords: Academic Paper, Gender, Name Features, Visual Features 
+      Classifier: Sexmachine, Genderize, Face++
+      Features: combination features (name and profile pictures) 
+      <br><br>
+      Karimi et al. present a name features-based gender inference model that they combine with the web-based image retrieval of facial images. The authors explore frequently used name-based gender classification tools (Sexmachine and Genderize) and utilize a labeled dataset of names of varying origins to evaluate and compare them based on accuracy and bias. They also utilized Face++ in order to infer gender by collecting the first five Google thumbnails from a full name search query -- applying image recognition on the resultant thumbnails. They further combined the more accurate gender inference tool -- Genderize -- with Face++ in two ways: with both methods given equal weight and where Genderize is used first and facial recognition is used for unidentified names. Both methods achieve high accuracy, with the method that uses Genderize first achieving an accuracy of 92% for inference. They propose this method as it increases the accuracy of gender detection across varying geographies. Considering the fact that popular names of non-Western industrialized countries (such as China, South Korea or Brazil) are not covered sufficiently in name databases, the combination of name and image-based gender inference methods can help reduce this bias. 
     </p>
   </div>
   </div>
 </div>
-<div class="mix circle">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-    Headline 2
+<div class="mix combo svm">
+<div class='card' id='c12'>
+  <a class='open' href='#c12'>
+    A General Gender Inference Method Based on Web by Hong Yang and Yali Yuan (2016)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      the queen is a lizard
+      Keywords: Academic Paper, Gender, SVM
+      Classifier: support vector machine
+      Features: combination features (representative keywords derived from web queries using a person's name)
+      <br><br>
+      Yang and Yuan propose a general method for efficiently and accurately inferring gender from unlabelled data, arguing that few existing studies have considered measuring gender using an approach that facilitates interoperability. They also argue that by using the big data potential of the Web they can source enough information to automatically infer a person’s gender. They constructed what they call a “smart query” -- a query composed of a person’s name and representative gender keywords (in this study those keywords were “her” and “his”) -- to search engines. The query (constructed as “name his OR her”) finds the representative keywords for documents describing a user with a specific gender and is used with a supervised SVM classification model for inference. Yang and Yuan also present a voting framework to efficiently incorporate various alternative methods of general inference (facial recognition and name-list method), where each predictor model gives its inference result as a “vote”, with the most voted gender label as the final prediction. While their web-based method performs better than the other methods evaluated in isolation (achieving 93.38% accuracy), they demonstrate that the accuracy performance improves slightly when this method is used as part of their voting framework, improving the performance to 96.9%. 
     </p>
   </div>
 </div>
 </div>
-<div class="mix triangle">
+<div class="mix txt multi">
 <div class='card' id='c3'>
   <a class='open' href='#c3'>
-    Headline 3
+    Piloting a Theory-Based Approach to Inferring Gender in Big Data by Jason Radford (2017)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      childish gambino and donald glover r the same person
+      Keywords: Academic Paper, Gender, Gender Systems Theory
+      Classifier: topic and behaviour models 
+      Features: text features (text derived from social media, websites and other source materials)
+      <br><br>
+      Radford, advocating for an alternative approach to gender inference, develops a model to measure and predict gender based on gender systems theory. This theory posits that gender is constructed on three levels: at the individual level, the interactional level and the institutional level. He suggests that the scalar component of gender construction applied to a gender inference model would render this model more interoperable across different types of source materials, as gender inference being done differently according to the context. Based on this theory, Radford creates gender measurement models for five different source materials: (1) blog posts, (2) tweets, (3) crowdfunding essays, (4) movie scripts, and (5) professional writing. The author tests the models’ accuracy in measuring gender for each of these source materials with machine learning topic and behaviour models. Comparing the result with more standard prediction models, Radford discovers that such measurement models of gender are if not as accurate, sometime more accurate than the standard prediction models. 
     </p>
   </div>
 </div>
