@@ -281,8 +281,8 @@ fieldset {
 }
 .card {
   display: block;
-  width: 25vw;
-  height: 10vw;
+  width: 22vw;
+  height: 9vw;
   overflow: hidden;
 }
 .card .open {
