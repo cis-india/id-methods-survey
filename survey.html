@@ -83,6 +83,10 @@ filters
       <label>support vector machine</label>
     </div>
     <div class="checkbox">
+      <input type="checkbox" value=".mul"/>
+      <label>multiple</label>
+    </div>
+    <div class="checkbox">
       <input type="checkbox" value=".other"/>
       <label>other</label>
     </div>
@@ -189,14 +193,30 @@ filters
       Features: text features (twitter user language in tweets and profiles) 
 <br><br>
       Rao and Yarowsky set out to infer the gender, age and political orientation of Twitter users utilizing a stacked SVM classification method (combining SVM models) over a set of features. The authors emphasize the importance of language in identifying latent user attribute and propose a mixture of lexical and sociolinguistic-based feature for facilitating classification of Twitter users based on their informal textual communication. They utilize user’s status messages as a means of inference. They test and compare 3 different classification models: (1) a sociolinguistic feature model: where digital socio-linguistic cues such as the use of emoticons or certain punctuation (ellipses and exclamation marks) are used as features; (2) a lexical n-gram model: where the unigram and bigram of the tweet text was derived and; (3) a stacked model that’s features were derived from the predictions of the previous 2 models. For gender, they found that their sociolinguistic model (71.76% accuracy) performed better than their lexical model (68.70% accuracy) from the status text alone -- their stacked model did marginally better, achieving a 72.33 % accuracy rate. It should be noted that the authors also examined the use of social network structure (e.g. follower-followee ratio)  and communication behaviour (e.g. reply rate) and determined that they were not valuable in inferring latent author attributes. 
-
     </p>
   </div>
   </div>
 </div>
-<div class="mix other combo">
+<div class="mix svm txt">
 <div class='card' id='c2'>
   <a class='open' href='#c2'>
+     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM
+      Classifier: support vector machine
+      Features: text features (twitter user language in tweets and profiles)
+      <br><br>
+      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
+      </p>
+  </div>
+</div>
+</div>
+<div class="mix other combo">
+<div class='card' id='c3'>
+  <a class='open' href='#c3'>
      Discriminating Gender on Twitter by John D. Burger, John Henderson, George Kim and Guido Zarella (2011) 
   </a>
   <div class='content'>
@@ -207,25 +227,59 @@ filters
       Features: combination of features (twitter user language in tweets; profile data; names)
       <br><br>
       In this paper, Burger et al. attempt to identify the gender of Twitter users using four different fields: the language content of tweets as well as the full name, screen name, and description of the user from their profile.  They utilize more than 4 million tweets from 184 000 authors in various languages -- 66.7% of which were in English. Both word- and character-level n-grams from each of the previously mentioned fields are utilized in different combinations as inputs for the balanced winnow2 classifier. They performed a number of experiments with the winnow algorithm, evaluating the four fields in isolation and various combinations. Significantly, they compared the efficacy of their classifier results to human performance of the same activity conducted over a crowdsourcing platform. When considering a single tweet, the algorithm’s predictive accuracy was 67.8% compared to the 75.5% predictive accuracy achieved if all  of a user’s tweets were used. The combination of all four fields achieved an accuracy of 92.0% whereas the combination of tweets and screen name (the data most often available) achieved an accuracy of 81.4%. Surprisingly, all these were higher than the accuracy of the human raters, who predicted gender at an accuracy of 65.7% form individual messages. 
-
+    </p>
+  </div>
+</div>
+</div>
+</div>
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c4'>
+  <a class='open' href='#c4'>
+  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM
+    Classifier: support vector machine
+    Features: text features (twitter user language in tweets and profiles) 
+    <br><br>
+    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix mul vis">
+<div class='card' id='c5'>
+  <a class='open' href='#c5'>
+    Language Independent Gender Classification on Twitter by Jalal S. Alowibdi, Ugo A. Buy, and Philip Yu (2013)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features 
+      Classifier: probabilistic neural network, decision tree, naive bayes, naive bayes/decision tree hybrid
+      Features; visual features (color-based features extracted from users’ Twitter profiles)
+      <br><br>
+      Alowidbi et al., recognizing that the vast majority of research for gender inference and classification on Twitter is language dependent, present a language independent inference model that predicts gender using five color-based features extracted from users’ Twitter profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color, and (5) sidebar border color. They preprocess colors harvested from 53,326 Twitter profiles, normalizing these colors into five-color based features. Based on this dataset, they performed a number of experiments with data subsets as well as with different classifiers to determine accuracy. They conclude that utilizing solely five color features (what they refer to as quantization) can provide reasonably accurate gender prediction, with the naive bayes/decision tree hybrid classifier achieving the highest overall accuracy of 71.4%. 
     </p>
   </div>
 </div>
 </div>
 <div class="mix svm txt">
-<div class='card' id='c3'>
-  <a class='open' href='#c3'>
-    Homophily and Latent Attribute Inference: Inferring Latent Attributes of Twitter Users from Neighbors by Faiyaz Al Zamal, Wendy Liu and Derek Ruths (2012)
+<div class='card' id='c5'>
+  <a class='open' href='#c6'>
+    Gender Inference of Twitter Users in Non-English Contexts by Morgane Ciot, Morgan Sonderegger and Derek Ruths (2013) 
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM, Homophily 
-    Classifier: support vector machine
-    Features: text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)
-    <br><br>
-    Zamal et al. infer a number of latent attributes -- specifically author, age and political affiliation -- of Twitter users based on their tweets. They further then evaluate the extent of which features related to Twitter user’s neighbourhoods (such as their closest and least popular friends on the platform) can improve the overall accuracy of inference. For gender ifnerrence, the authors used a labelled dataset of 400 Twitter users along with what Zamal et al. refer to as the user’s friends -- as opposed to their followers. For each of these users and their friends, the most recent 1000 tweets were collected and used for the classification model. While the augmenting features of user’s Twitter neighbourhoods was found to improve inference accuracy for both age and political orientation (by at least 3 percent), gender demonstrated no statistically significant improvement of inference. Zamal et al. concluded that improvements in inference using neighbourhood related features was dependent on the assoritivity of an attribute (with gender reported to have low assoritivity in online and physical networks). 
-
+      Keywords: Academic Paper, Gender, Twitter, SVM
+      Classifier: support vector machine 
+      Features: text features (twitter user language in tweets as well as frequency attributes)
+      <br><br>
+      Ciot et al. set out to infer gender from non-english based twitter content with the aim of understanding how men and women use language differently across cultures. They work with a sample comprised of genetically unrelated languages (Japanese, Indonesian, Turkish and French) and run an SVM classifier to determine its performance across these languages. They call their model language agnostic as given a labeled set of users and tweets in a particular language, a model can be built without any knowledge of the structure or content of the language itself. Each of their language gender models was comprised of a different set of language agnostic features (such as top words, top n-grams, top hashtags, frequency of tweets, retweets, etc.). Classifier accuracy levels vary across languages: classifier accuracy was comparable on French and Indonesian while the Turkish language performed the best. In contrast, gender in Japanese could not be reliably inferred with reasonable accuracy -- the authors calling for better ways to accommodate the complex orthography and syntax based mechanisms of language. The authors conclude that when developing a language gender model, language-specific features should be considered as their inclusion will boost accuracy. 
     </p>
   </div>
 </div>
@@ -271,33 +325,89 @@ filters
   </div>
 </div>
 </div>
-<div class="mix square">
-<div class='card' id='c4'>
-  <a class='open' href='#c4'>
-    Headline 4
+</div>	
+<div class= 'lit_body'>
+<div class="mix triangle">
+<div class='card' id='c1'>
+  <a class='open' href='#c1'>
+    Headline 1
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-   the cia killed kennedy 
+      9/11 was an inside job
     </p>
   </div>
-</div>
+  </div>
 </div>
 <div class="mix circle">
-<div class='card' id='c5'>
-  <a class='open' href='#c5'>
-    Headline 5
+<div class='card' id='c2'>
+  <a class='open' href='#c2'>
+    Headline 2
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-    bless this post
+      the queen is a lizard
     </p>
   </div>
 </div>
 </div>
+<div class="mix triangle">
+<div class='card' id='c3'>
+  <a class='open' href='#c3'>
+    Headline 3
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      childish gambino and donald glover r the same person
+    </p>
+  </div>
 </div>
+</div>
+</div>	
+<div class= 'lit_body'>
+<div class="mix triangle">
+<div class='card' id='c1'>
+  <a class='open' href='#c1'>
+    Headline 1
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      9/11 was an inside job
+    </p>
+  </div>
+  </div>
+</div>
+<div class="mix circle">
+<div class='card' id='c2'>
+  <a class='open' href='#c2'>
+    Headline 2
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      the queen is a lizard
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix triangle">
+<div class='card' id='c3'>
+  <a class='open' href='#c3'>
+    Headline 3
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      childish gambino and donald glover r the same person
+    </p>
+  </div>
+</div>
+</div>
+</div>	
     </main>
 </body>
 
