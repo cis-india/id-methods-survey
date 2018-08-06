@@ -85,7 +85,7 @@ filters
     </td>
     <td>
     <div class="checkbox">
-      <input type="checkbox" value=".mul"/>
+      <input type="checkbox" value=".multi"/>
       <label>multiple</label>
     </div>
     <div class="checkbox">
@@ -225,7 +225,7 @@ filters
   </div>
 </div>
 </div>
-<div class="mix mul vis">
+<div class="mix multi vis">
 <div class='card' id='c5'>
   <a class='open' href='#c5'>
     Language Independent Gender Classification on Twitter by Jalal S. Alowibdi, Ugo A. Buy, and Philip Yu (2013)
@@ -261,41 +261,53 @@ filters
 </div>
 </div>
 <div class= 'lit_body'>
-<div class="mix triangle">
-<div class='card' id='c1'>
-  <a class='open' href='#c1'>
-    Headline 1
+<div class="mix svm name">
+<div class='card' id='c7'>
+  <a class='open' href='#c7'>
+    What’s in a Name? Using First Names as Features for Gender Inference in Twitter by Wendy Liu and Derek Ruths (2013) 
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      9/11 was an inside job
+      Keywords: Academic Paper, Gender, Twitter, Name Features, SVM
+      Classifier: support vector machine
+      Features: name features (self reported first name of Twitter users) 
+      <br><br>
+      In this paper, Liu and Ruths study the incremental value of using a Twitter user’s name as a feature for gender inference. They achieve this by designing and implementing 2 different gender inference methods that utilize the user’s self-reported first name in varying ways.They derive a gender name association score utilizing the name distributions collected from the US census. This score is based on the logic that there are names that are very specific to a females or males while other are common among both genders. In one method, this name association score was included as a feature  and integrated into a text features based classifier while in the other, this score was used as a threshold, determining whether or not to follow up with a classifier (different thresholds were tested).The authors found that both methods that incorporate the name information outperform the baseline classification method devoid of name features. The threshold approach only made a modest improvement in the accuracy of gender inference compared to the integrated method. The authors explain this by suggesting the majority of names are strongly gendered or unknown. 
     </p>
   </div>
   </div>
 </div>
-<div class="mix circle">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-    Headline 2
+<div class="mix multi vis">
+<div class='card' id='c8'>
+  <a class='open' href='#c8'>
+    Say it with Colors: Language-Independent Gender Classification on Twitter by Jalal S. Alowibdi, Ugo A. Buy and Philip S. Yu (2014)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      the queen is a lizard
+      Keyword: Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features 
+      Classifier: probabilistic neural network, decision tree, naive bayes, naive bayes/decision tree hybrid
+      Features; visual features (color based features extracted from users’ Twitter profiles)
+      <br> <br>
+      Alowibdi et al. explore gender classification methods independent of language. Using color-based features extracted from Twitter, they attempt gender inference based on a user’s color preference. They harvest colour data from Twitter across 34 different languages -- specifically the five color fields that allow users to choose colors for their profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color and (5) sidebar border color. They normalize this data through a quantization and sorting procedure to reduce the number of color features, and apply different classifiers to this dataset to test the validity of their approach. They also test different subsets of this data in order to account for the existence of predefined designs in the Twitter user set up. They get the highest accuracy with the naive bayes/decision tree hybrid with the best results achieved when they excluded profiles using the 19 predefined designs. Despite the fact that a large portion of Twitter users do not change the default colors of their Twitter profile, the authors conclude that using color features can reasonably infer gender.
     </p>
   </div>
 </div>
 </div>
-<div class="mix triangle">
-<div class='card' id='c3'>
-  <a class='open' href='#c3'>
-    Headline 3
+<div class="mix other txt">
+<div class='card' id='c9'>
+  <a class='open' href='#c9'>
+    Gender in Twitter: Styles, Stances, and Social Networks by David Bamman, Jacob Eisenstein and Tyler Schnoebelen (2014)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      childish gambino and donald glover r the same person
+      Keywords: Academic Paper, Gender, Twitter, Textt Features, 
+      Classifier: bag-of-words predictive model
+      Features: text features (twitter user language in tweets as well as user’s network)
+      <br><br>
+      Bamman et al., recognizing the tendency of gender inference models to adopt binary notions of gender and oversimplified assumptions about its relationship with language, propose an alternative more “nuanced” gender inference model. They combine computational methods with social theory, examining the social network of 14,464 Twitter users and utilize and a text-based gender classifier that achieves an 88% accuracy in gender prediction. They also correlate the output of their classification model with the gender composition of the Twitter user’s network. Through this, they determine that gender homophily correlates with the use of gendered language (i.e. the more gendered a user’s language, the more gendered their social network). Furthermore, Individuals whose gender is classified incorrectly have social networks that are much less homophilous than those of the individuals that the classifier gets right. Significantly, the authors don’t see misclassified individuals as outliers but rather as individuals who do gender differently, and a such influencing their linguistic choices and social behaviour. They suggest that there are multiple gendered styles and that the performance of popular gender norms in language is part of a gendered persona that shapes individual interactions.However, they are adamant, that the addition of social network information does not improve gender classification as these outliers are not the result of statistical aberration, but rather, indicate individuals who have adopted a persona different then larger norms. They suggest that it is this persona shapes their social network connection just as it shaped their linguistic resources. 
     </p>
   </div>
 </div>
