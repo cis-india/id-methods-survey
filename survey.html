@@ -53,162 +53,117 @@
       </div>
     </nav>
 
-<main role="main" class="container">
-
+<main role="main" class="container survey">
+<!-- Start of Filter -->
 <div class="filter">
-filters
+    <h1>Filters</h1>
 </div>
 <button class="arrow" type="button"> 
-  <span class="arrow-hand top"></span>
-  <span class="arrow-hand bottom"></span>
+    <span class="arrow-hand top"></span>
+    <span class="arrow-hand bottom"></span>
 </button>
 <div class="menu" style="display:none;"><span>
-  <form class="controls" id="Filters">
-    <fieldset class="filter-group checkboxes">
-  <table>
-  <h4>classifier</h4>
-  <tr>
-    <th></th>
-    <th></th> 
-    <th></th>
-  </tr>
-  <tr>
-    <td>
-    <div class="checkbox">
-      <input type="checkbox" value=".dt"/>
-      <label>decision tree</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".svm"/>
-      <label>support vector machine</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".other"/>
-      <label>other</label>
-    </div>
-    </td>
-   <!-- <td> 
-    <div class="checkbox">
-      <input type="checkbox" value=".square"/>
-      <label>Square</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".circle"/>
-      <label>Circle</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".triangle"/>
-      <label>Triangle</label>
-    </div>
-    </td>
-    <td>
-          <div class="checkbox">
-      <input type="checkbox" value=".square"/>
-      <label>Square</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".circle"/>
-      <label>Circle</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".triangle"/>
-      <label>Triangle</label>
-    </div>
-    </td>
-  </tr>-->
-</table>
-  </fieldset>
-      <fieldset class="filter-group checkboxes">
-  <table>
-  <h4>
-  feature type
-  </h4>
-  <tr>
-    <th></th>
-    <th></th> 
-    <th></th>
-  </tr>
-  <tr>
-    <td>
-    <div class="checkbox">
-      <input type="checkbox" value=".txt"/>
-      <label>text</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".vis"/>
-      <label>visual</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".name"/>
-      <label>name</label>
-    </div>
-    </td>
-    <td> 
-    <div class="checkbox">
-      <input type="checkbox" value=".physical"/>
-      <label>physical</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".combo"/>
-      <label>combination</label>
-    </div>
-    </td>
-    <!--<td>
-          <div class="checkbox">
-      <input type="checkbox" value=".square"/>
-      <label>Square</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".circle"/>
-      <label>Circle</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".triangle"/>
-      <label>Triangle</label>
-    </div>
-    </td>
-  </tr>-->
-</table>
-  </fieldset>
-    <button id="Reset">Clear Filters</button>
-  </form>
+    <form class="controls" id="Filters">
+        <fieldset class="filter-group checkboxes">
+            <table>
+                <h4>Classifier</h4>
+                <tr>
+                    <th></th>
+                    <th></th> 
+                    <th></th>
+                </tr>
+                <tr>
+                <td>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".dt"/>
+                        <label>Decision Tree</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".svm"/>
+                        <label>Support Vector Machine</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".other"/>
+                        <label>Other</label>
+                    </div>
+                </td>
+            </table>
+        </fieldset>
+        <fieldset class="filter-group checkboxes">
+            <table>
+                <h4>Feature Type</h4>
+                <tr>
+                    <th></th>
+                    <th></th> 
+                    <th></th>
+                </tr>
+                <tr>
+                <td>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".txt"/>
+                        <label>Text</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".vis"/>
+                        <label>Visual</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".name"/>
+                        <label>Name</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".physical"/>
+                        <label>Physical</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value=".combo"/>
+                        <label>Combination</label>
+                    </div>
+                </td>
+            </table>
+        </fieldset>
+        <button id="Reset">Clear Filters</button>
+    </form>
 </span></div>
 </div>
-<div id="Container" class="container">
+<!-- End of Filter -->
+<div id="Container" class="container boxes">
 <div class= 'lit_body'>
+<!-- Card 1 -->
 <div class="mix svm txt">
 <div class='card' id='c1'>
-  <a class='open' href='#c1'>
-	  Detecting Latent User Properties in Social Media by Delip Rao and David Yarowsky (2010)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, SVM, stacked SVM, Text Features
-      Classifier: support vector machine 
-      Features: text features (twitter user language in tweets and profiles) 
-<br><br>
-      Rao and Yarowsky set out to infer the gender, age and political orientation of Twitter users utilizing a stacked SVM classification method (combining SVM models) over a set of features. The authors emphasize the importance of language in identifying latent user attribute and propose a mixture of lexical and sociolinguistic-based feature for facilitating classification of Twitter users based on their informal textual communication. They utilize user’s status messages as a means of inference. They test and compare 3 different classification models: (1) a sociolinguistic feature model: where digital socio-linguistic cues such as the use of emoticons or certain punctuation (ellipses and exclamation marks) are used as features; (2) a lexical n-gram model: where the unigram and bigram of the tweet text was derived and; (3) a stacked model that’s features were derived from the predictions of the previous 2 models. For gender, they found that their sociolinguistic model (71.76% accuracy) performed better than their lexical model (68.70% accuracy) from the status text alone -- their stacked model did marginally better, achieving a 72.33 % accuracy rate. It should be noted that the authors also examined the use of social network structure (e.g. follower-followee ratio)  and communication behaviour (e.g. reply rate) and determined that they were not valuable in inferring latent author attributes. 
-
-    </p>
-  </div>
-  </div>
-</div>
+    <a class='open' href='#c1'>"Detecting Latent User Properties in Social Media" by Delip Rao and David Yarowsky (2010)</a>
+    <div class='content'>
+        <h3><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.364.4449" target="_blank">Detecting Latent User Properties in Social Media</a><br />
+            Delip Rao and David Yarowsky (2010)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br />
+            <strong>Keywords:</strong> Academic Paper, Gender, Twitter, SVM, stacked SVM, Text Features<br />
+            <strong>Classifier:</strong> Support vector machine<br />
+            <strong>Features:</strong> Text features (Twitter user language in tweets and profiles)<br />
+            <strong>Citation:</strong>
+            <br /><br />
+        </h6> 
+        <p>Rao and Yarowsky set out to infer the gender, age and political orientation of Twitter users utilizing a stacked SVM classification method (combining SVM models) over a set of features. The authors emphasize the importance of language in identifying latent user attribute and propose a mixture of lexical and sociolinguistic-based feature for facilitating classification of Twitter users based on their informal textual communication.<p>
+        <p>They utilize user’s status messages as a means of inference. They test and compare 3 different classification models: (1) a sociolinguistic feature model: where digital socio-linguistic cues such as the use of emoticons or certain punctuation (ellipses and exclamation marks) are used as features; (2) a lexical n-gram model: where the unigram and bigram of the tweet text was derived and; (3) a stacked model that’s features were derived from the predictions of the previous 2 models.</p>
+        <p>For gender, they found that their sociolinguistic model (71.76% accuracy) performed better than their lexical model (68.70% accuracy) from the status text alone -- their stacked model did marginally better, achieving a 72.33 % accuracy rate. It should be noted that the authors also examined the use of social network structure (e.g. follower-followee ratio)  and communication behaviour (e.g. reply rate) and determined that they were not valuable in inferring latent author attributes.</p>
+    </div>
+</div></div>
+<!-- Card 2 -->
 <div class="mix other combo">
 <div class='card' id='c2'>
   <a class='open' href='#c2'>
-     Discriminating Gender on Twitter by John D. Burger, John Henderson, George Kim and Guido Zarella (2011) 
+     <em>Discriminating Gender on Twitter</em> by John D. Burger, John Henderson, George Kim and Guido Zarella (2011) 
   </a>
   <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Combination Features
-      Classifier: balanced winnow2
-      Features: combination of features (twitter user language in tweets; profile data; names)
+    <h3><a href="">Discriminating Gender on Twitter</a><br />
+        John D. Burger, John Henderson, George Kim and Guido Zarella (2011)</h3>
+    <p><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Combination Features<br />
+        <strong>Classifier:</strong> balanced winnow2<br />
+        <strong>Features:</strong> combination of features (twitter user language in tweets; profile data; names)
+        <strong>Citation:</strong> 
       <br><br>
-      In this paper, Burger et al. attempt to identify the gender of Twitter users using four different fields: the language content of tweets as well as the full name, screen name, and description of the user from their profile.  They utilize more than 4 million tweets from 184 000 authors in various languages -- 66.7% of which were in English. Both word- and character-level n-grams from each of the previously mentioned fields are utilized in different combinations as inputs for the balanced winnow2 classifier. They performed a number of experiments with the winnow algorithm, evaluating the four fields in isolation and various combinations. Significantly, they compared the efficacy of their classifier results to human performance of the same activity conducted over a crowdsourcing platform. When considering a single tweet, the algorithm’s predictive accuracy was 67.8% compared to the 75.5% predictive accuracy achieved if all  of a user’s tweets were used. The combination of all four fields achieved an accuracy of 92.0% whereas the combination of tweets and screen name (the data most often available) achieved an accuracy of 81.4%. Surprisingly, all these were higher than the accuracy of the human raters, who predicted gender at an accuracy of 65.7% form individual messages. 
-
-    </p>
+      In this paper, Burger et al. attempt to identify the gender of Twitter users using four different fields: the language content of tweets as well as the full name, screen name, and description of the user from their profile.  They utilize more than 4 million tweets from 184 000 authors in various languages -- 66.7% of which were in English. Both word- and character-level n-grams from each of the previously mentioned fields are utilized in different combinations as inputs for the balanced winnow2 classifier. They performed a number of experiments with the winnow algorithm, evaluating the four fields in isolation and various combinations. Significantly, they compared the efficacy of their classifier results to human performance of the same activity conducted over a crowdsourcing platform. When considering a single tweet, the algorithm’s predictive accuracy was 67.8% compared to the 75.5% predictive accuracy achieved if all  of a user’s tweets were used. The combination of all four fields achieved an accuracy of 92.0% whereas the combination of tweets and screen name (the data most often available) achieved an accuracy of 81.4%. Surprisingly, all these were higher than the accuracy of the human raters, who predicted gender at an accuracy of 65.7% form individual messages.</p>
+    <p><a class='close' href='#'>Go back to survey page</a></p>
   </div>
 </div>
 </div>
@@ -218,86 +173,231 @@ filters
     Homophily and Latent Attribute Inference: Inferring Latent Attributes of Twitter Users from Neighbors by Faiyaz Al Zamal, Wendy Liu and Derek Ruths (2012)
   </a>
   <div class='content'>
+    <h3><a href="http://www.networkdynamics.org/static/publication_files/ZamalLiuRuths_ICWSM2012.pdf" target="_blank">Homophily and Latent Attribute Inference: Inferring Latent Attributes of Twitter Users from Neighbors</a><br />
+        Faiyaz Al Zamal, Wendy Liu and Derek Ruths (2012)</h3>
+    <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+    <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Text Features, SVM, Homophily<br />
+        <strong>Classifier:</strong> Support vector machine<br />
+        <strong>Features:</strong> Text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)
+        <strong>Citation:</strong></h6>
+    <br>
+    <p>Zamal et al. infer a number of latent attributes -- specifically author, age and political affiliation -- of Twitter users based on their tweets. They further then evaluate the extent of which features related to Twitter user’s neighbourhoods (such as their closest and least popular friends on the platform) can improve the overall accuracy of inference. For gender ifnerrence, the authors used a labelled dataset of 400 Twitter users along with what Zamal et al. refer to as the user’s friends -- as opposed to their followers. For each of these users and their friends, the most recent 1000 tweets were collected and used for the classification model. While the augmenting features of user’s Twitter neighbourhoods was found to improve inference accuracy for both age and political orientation (by at least 3 percent), gender demonstrated no statistically significant improvement of inference. Zamal et al. concluded that improvements in inference using neighbourhood related features was dependent on the assoritivity of an attribute (with gender reported to have low assoritivity in online and physical networks).</p>
+  </div>
+</div>
+</div>
+</div>
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c4'>
+  <a class='open' href='#c4'>
+  Homophily and Latent Attribute Inference: Inferring Latent Attributes of Twitter Users from Neighbors by Faiyaz Al Zamal, Wendy Liu and Derek Ruths (2012)
+  </a>
+  <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM, Homophily 
-    Classifier: support vector machine
-    Features: text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)
+    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM, Homophily<br>
+    Classifier: support vector machine<br>
+    Features: text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)<br>
     <br><br>
     Zamal et al. infer a number of latent attributes -- specifically author, age and political affiliation -- of Twitter users based on their tweets. They further then evaluate the extent of which features related to Twitter user’s neighbourhoods (such as their closest and least popular friends on the platform) can improve the overall accuracy of inference. For gender ifnerrence, the authors used a labelled dataset of 400 Twitter users along with what Zamal et al. refer to as the user’s friends -- as opposed to their followers. For each of these users and their friends, the most recent 1000 tweets were collected and used for the classification model. While the augmenting features of user’s Twitter neighbourhoods was found to improve inference accuracy for both age and political orientation (by at least 3 percent), gender demonstrated no statistically significant improvement of inference. Zamal et al. concluded that improvements in inference using neighbourhood related features was dependent on the assoritivity of an attribute (with gender reported to have low assoritivity in online and physical networks). 
-
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix svm txt">
+<div class='card' id='c5'>
+  <a class='open' href='#c5'>
+  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
+    Classifier: support vector machine<br>
+    Features: text features (twitter user language in tweets and profiles)<br>
+    <br><br>
+    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix multi vis">
+<div class='card' id='c6'>
+  <a class='open' href='#c6'>
+    Language Independent Gender Classification on Twitter by Jalal S. Alowibdi, Ugo A. Buy, and Philip Yu (2013)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features<br>
+      Classifier: probabilistic neural network, decision tree, naive bayes, naive bayes/decision tree hybrid<br>
+      Features; visual features (color-based features extracted from users’ Twitter profiles)<br>
+      <br><br>
+      Alowidbi et al., recognizing that the vast majority of research for gender inference and classification on Twitter is language dependent, present a language independent inference model that predicts gender using five color-based features extracted from users’ Twitter profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color, and (5) sidebar border color. They preprocess colors harvested from 53,326 Twitter profiles, normalizing these colors into five-color based features. Based on this dataset, they performed a number of experiments with data subsets as well as with different classifiers to determine accuracy. They conclude that utilizing solely five color features (what they refer to as quantization) can provide reasonably accurate gender prediction, with the naive bayes/decision tree hybrid classifier achieving the highest overall accuracy of 71.4%. 
     </p>
   </div>
 </div>
 </div>
 </div>
 <div class= 'lit_body'>
-<div class="mix triangle">
-<div class='card' id='c1'>
-  <a class='open' href='#c1'>
-    Headline 1
+<div class="mix svm txt">
+<div class='card' id='c7'>
+  <a class='open' href='#c7'>
+    Gender Inference of Twitter Users in Non-English Contexts by Morgane Ciot, Morgan Sonderegger and Derek Ruths (2013) 
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      9/11 was an inside job
-    </p>
-  </div>
-  </div>
-</div>
-<div class="mix circle">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-    Headline 2
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      the queen is a lizard
+      Keywords: Academic Paper, Gender, Twitter, SVM<br>
+      Classifier: support vector machine<br>
+      Features: text features (twitter user language in tweets as well as frequency attributes)<br>
+      <br><br>
+      Ciot et al. set out to infer gender from non-english based twitter content with the aim of understanding how men and women use language differently across cultures. They work with a sample comprised of genetically unrelated languages (Japanese, Indonesian, Turkish and French) and run an SVM classifier to determine its performance across these languages. They call their model language agnostic as given a labeled set of users and tweets in a particular language, a model can be built without any knowledge of the structure or content of the language itself. Each of their language gender models was comprised of a different set of language agnostic features (such as top words, top n-grams, top hashtags, frequency of tweets, retweets, etc.). Classifier accuracy levels vary across languages: classifier accuracy was comparable on French and Indonesian while the Turkish language performed the best. In contrast, gender in Japanese could not be reliably inferred with reasonable accuracy -- the authors calling for better ways to accommodate the complex orthography and syntax based mechanisms of language. The authors conclude that when developing a language gender model, language-specific features should be considered as their inclusion will boost accuracy. 
     </p>
   </div>
 </div>
 </div>
-<div class="mix triangle">
-<div class='card' id='c3'>
-  <a class='open' href='#c3'>
-    Headline 3
+<div class="mix svm name">
+<div class='card' id='c8'>
+  <a class='open' href='#c8'>
+    What’s in a Name? Using First Names as Features for Gender Inference in Twitter by Wendy Liu and Derek Ruths (2013) 
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-      childish gambino and donald glover r the same person
+      Keywords: Academic Paper, Gender, Twitter, Name Features, SVM<br>
+      Classifier: support vector machine<br>
+      Features: name features (self reported first name of Twitter users)<br>
+      <br><br>
+      In this paper, Liu and Ruths study the incremental value of using a Twitter user’s name as a feature for gender inference. They achieve this by designing and implementing 2 different gender inference methods that utilize the user’s self-reported first name in varying ways.They derive a gender name association score utilizing the name distributions collected from the US census. This score is based on the logic that there are names that are very specific to a females or males while other are common among both genders. In one method, this name association score was included as a feature  and integrated into a text features based classifier while in the other, this score was used as a threshold, determining whether or not to follow up with a classifier (different thresholds were tested).The authors found that both methods that incorporate the name information outperform the baseline classification method devoid of name features. The threshold approach only made a modest improvement in the accuracy of gender inference compared to the integrated method. The authors explain this by suggesting the majority of names are strongly gendered or unknown. 
     </p>
   </div>
-</div>
-</div>
-<div class="mix square">
-<div class='card' id='c4'>
-  <a class='open' href='#c4'>
-    Headline 4
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-   the cia killed kennedy 
-    </p>
   </div>
 </div>
-</div>
-<div class="mix circle">
-<div class='card' id='c5'>
-  <a class='open' href='#c5'>
-    Headline 5
+<div class="mix multi vis">
+<div class='card' id='c9'>
+  <a class='open' href='#c9'>
+    Say it with Colors: Language-Independent Gender Classification on Twitter by Jalal S. Alowibdi, Ugo A. Buy and Philip S. Yu (2014)
   </a>
   <div class='content'>
     <a class='close' href='#'>x</a>
     <p>
-    bless this post
+      Keyword: Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features<br>
+      Classifier: probabilistic neural network, decision tree, naive bayes, naive bayes/decision tree hybrid<br>
+      Features; visual features (color based features extracted from users’ Twitter profiles)<br>
+      <br> <br>
+      Alowibdi et al. explore gender classification methods independent of language. Using color-based features extracted from Twitter, they attempt gender inference based on a user’s color preference. They harvest colour data from Twitter across 34 different languages -- specifically the five color fields that allow users to choose colors for their profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color and (5) sidebar border color. They normalize this data through a quantization and sorting procedure to reduce the number of color features, and apply different classifiers to this dataset to test the validity of their approach. They also test different subsets of this data in order to account for the existence of predefined designs in the Twitter user set up. They get the highest accuracy with the naive bayes/decision tree hybrid with the best results achieved when they excluded profiles using the 19 predefined designs. Despite the fact that a large portion of Twitter users do not change the default colors of their Twitter profile, the authors conclude that using color features can reasonably infer gender.
     </p>
   </div>
 </div>
 </div>
 </div>
+<div class= 'lit_body'>
+<div class="mix other txt">
+<div class='card' id='c10'>
+  <a class='open' href='#c10'>
+    Gender in Twitter: Styles, Stances, and Social Networks by David Bamman, Jacob Eisenstein and Tyler Schnoebelen (2014)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Twitter, Text Features<br>
+      Classifier: bag-of-words predictive model<br>
+      Features: text features (twitter user language in tweets as well as user’s network)<br>
+      <br><br>
+      Bamman et al., recognizing the tendency of gender inference models to adopt binary notions of gender and oversimplified assumptions about its relationship with language, propose an alternative more “nuanced” gender inference model. They combine computational methods with social theory, examining the social network of 14,464 Twitter users and utilize and a text-based gender classifier that achieves an 88% accuracy in gender prediction. They also correlate the output of their classification model with the gender composition of the Twitter user’s network. Through this, they determine that gender homophily correlates with the use of gendered language (i.e. the more gendered a user’s language, the more gendered their social network). Furthermore, Individuals whose gender is classified incorrectly have social networks that are much less homophilous than those of the individuals that the classifier gets right. Significantly, the authors don’t see misclassified individuals as outliers but rather as individuals who do gender differently, and a such influencing their linguistic choices and social behaviour. They suggest that there are multiple gendered styles and that the performance of popular gender norms in language is part of a gendered persona that shapes individual interactions.However, they are adamant, that the addition of social network information does not improve gender classification as these outliers are not the result of statistical aberration, but rather, indicate individuals who have adopted a persona different then larger norms. They suggest that it is this persona shapes their social network connection just as it shaped their linguistic resources. 
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix multi txt">
+<div class='card' id='c11'>
+  <a class='open' href='#c11'>
+    Exploring Gender Prediction from Digital Handwriting by Meryem Erbilek, Michael Fairhurst and Cheng Li (2016) 
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, SVM<br>
+      Classifier: support vector machine, naive bayes, k-nearest neighbour<br>
+      Features: text features (digitised handwriting data)<br>
+      <br><br>
+      Erbilek et al. explore the gender prediction capacity of digitised handwriting data (in this case, specifically handwriting data captured from a digitising tablet) based on different data content sources, classifiers and features. They analyze features extracted from digital handwriting samples according to demographic characteristics and different handwriting tasks (such as form-filling, text production, cheque completion, etc.). These tasks fall under one of two categories: (1) a fixed task where the subject is told what to write and (2) a variable task where the subject chooses what to write in response to a picture. Features identified as being commonly used in handwriting processing were extracted from the handwriting data to form a feature set consisting of dynamic and static features. After these features are normalized, gender prediction performance is evaluated by using all features with different classifiers. This study demonstrates that it is possible to use digital handwriting data to predict gender. According to the classifier and feature types use, as well as the handwriting task, different accuracy were achieved. The highest accuracy achieved was between 60% -80%. 
+    </p>
+  </div>
+  </div>
+</div>
+<div class="mix physical dt">
+<div class='card' id='c12'>
+  <a class='open' href='#c12'>
+    Implementing ID3 Algorithm for Gender Identification of Bangladeshi People by Sazzad Hossain, Shamsuzzaman, & Ahsan Habib (2016)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Physical Features, Decision Tree<br>
+      Classifier: decision tree<br>
+      Features: physical features (height, weight, and age)<br>
+      <br><br>
+      Hossain et al. apply a decision tree learning algorithm ID3 (Iterative Dichotomiser 3) in order to infer gender based on physical appearance attributes. The authors constructed a decision tree model from a dataset that included the age, weight, height and gender of a sample of Bangladeshi people aged 19-25. In the simplest terms, the ID3 algorithm tested each of the mentioned attributes, generating a decision tree based on the most useful attributes for classification. This derived decision tree was then used to predict a person’s gender based on their height, weight and age. Their method observed an accuracy of 85% to 95%. The authors make note of the interoperability of their algorithm as depending on the physical attributes of the country’s population, a specific algorithm for the country can be developed.
+    </p>
+  </div>
+</div>
+</div>
+</div>
+<div class= 'lit_body'>
+<div class="mix multi other">
+<div class='card' id='c13'>
+  <a class='open' href='#c13'>
+     Inferring Gender from Names on the Web: A Comparative Evaluation of Gender Detection Methods by Fariba Karimi, Claudia Wagner, Florian Lemmerich, Mohsen Jadidi and Markus Strohmaier (2016)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Name Features, Visual Features<br>
+      Classifier: Sexmachine, Genderize, Face++<br>
+      Features: combination features (name and profile pictures)<br>
+      <br><br>
+      Karimi et al. present a name features-based gender inference model that they combine with the web-based image retrieval of facial images. The authors explore frequently used name-based gender classification tools (Sexmachine and Genderize) and utilize a labeled dataset of names of varying origins to evaluate and compare them based on accuracy and bias. They also utilized Face++ in order to infer gender by collecting the first five Google thumbnails from a full name search query -- applying image recognition on the resultant thumbnails. They further combined the more accurate gender inference tool -- Genderize -- with Face++ in two ways: with both methods given equal weight and where Genderize is used first and facial recognition is used for unidentified names. Both methods achieve high accuracy, with the method that uses Genderize first achieving an accuracy of 92% for inference. They propose this method as it increases the accuracy of gender detection across varying geographies. Considering the fact that popular names of non-Western industrialized countries (such as China, South Korea or Brazil) are not covered sufficiently in name databases, the combination of name and image-based gender inference methods can help reduce this bias. 
+    </p>
+  </div>
+  </div>
+</div>
+<div class="mix combo svm">
+<div class='card' id='c14'>
+  <a class='open' href='#c14'>
+    A General Gender Inference Method Based on Web by Hong Yang and Yali Yuan (2016)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, SVM<br>
+      Classifier: support vector machine<br>
+      Features: combination features (representative keywords derived from web queries using a person's name)<br>
+      <br><br>
+      Yang and Yuan propose a general method for efficiently and accurately inferring gender from unlabelled data, arguing that few existing studies have considered measuring gender using an approach that facilitates interoperability. They also argue that by using the big data potential of the Web they can source enough information to automatically infer a person’s gender. They constructed what they call a “smart query” -- a query composed of a person’s name and representative gender keywords (in this study those keywords were “her” and “his”) -- to search engines. The query (constructed as “name his OR her”) finds the representative keywords for documents describing a user with a specific gender and is used with a supervised SVM classification model for inference. Yang and Yuan also present a voting framework to efficiently incorporate various alternative methods of general inference (facial recognition and name-list method), where each predictor model gives its inference result as a “vote”, with the most voted gender label as the final prediction. While their web-based method performs better than the other methods evaluated in isolation (achieving 93.38% accuracy), they demonstrate that the accuracy performance improves slightly when this method is used as part of their voting framework, improving the performance to 96.9%. 
+    </p>
+  </div>
+</div>
+</div>
+<div class="mix txt multi">
+<div class='card' id='c15'>
+  <a class='open' href='#c15'>
+    Piloting a Theory-Based Approach to Inferring Gender in Big Data by Jason Radford (2017)
+  </a>
+  <div class='content'>
+    <a class='close' href='#'>x</a>
+    <p>
+      Keywords: Academic Paper, Gender, Gender Systems Theory<br>
+      Classifier: topic and behaviour models<br>
+      Features: text features (text derived from social media, websites and other source materials)<br>
+      <br><br>
+      Radford, advocating for an alternative approach to gender inference, develops a model to measure and predict gender based on gender systems theory. This theory posits that gender is constructed on three levels: at the individual level, the interactional level and the institutional level. He suggests that the scalar component of gender construction applied to a gender inference model would render this model more interoperable across different types of source materials, as gender inference being done differently according to the context. Based on this theory, Radford creates gender measurement models for five different source materials: (1) blog posts, (2) tweets, (3) crowdfunding essays, (4) movie scripts, and (5) professional writing. The author tests the models’ accuracy in measuring gender for each of these source materials with machine learning topic and behaviour models. Comparing the result with more standard prediction models, Radford discovers that such measurement models of gender are if not as accurate, sometime more accurate than the standard prediction models. 
+    </p>
+  </div>
+</div>
+</div>
+</div>	
     </main>
 </body>
 
