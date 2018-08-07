@@ -6,20 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="samangoudarzi">
     <link rel="icon" href="../../../../favicon.ico">
-
     <title>Survey of Identification Methods for Gender and Sexuality of Data Subjects | Big Data for Development Network</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/navbar-top-fixed.css" rel="stylesheet">
-  
   </head>
-
   <body>
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Survey of Identification Methods</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,21 +46,6 @@
         <p>&nbsp;</p>
         <h2 id="explainer-overview">Overview of how inferencing methods work</h1>
         <p>To infer an attribute from a dataset would require defining a set of descriptive parameters that would best separate this dataset into categories associated with the attribute in question. We refer to these parameters as features.</p>
-<<<<<<< HEAD
-        <p>Take for example a dataset composed entirely of ice cream cones and ice cream carts. How would a robot -- never before having seen either ice cream cones or ice cream carts before -- infer if each item has the attribute of being an ice cream cone or ice cream cart? </p>
-        <p>At the simplest level, this robot would want to determine a parameter -- or feature -- that would best differentiate these items. It can utilize a number of features (such as shape, size, and texture) in combination with each other for the purposes of inference. </p>
-        <p>We should keep in mind that although the use of number of features can result in more thorough decision making, the robot would have to spend more time considering each feature (of size, shape and texture) as it relates to an item. </p>
-        <p>Conversely, the robot can determine one single feature with significant discriminatory power and use only that parameter to make its decisions. Weight for example, could act as this feature, as ice cream carts weigh significantly more than ice cream cones. Although this method is more efficient, there is always the possibility (although incredibly minute) of the robot finding an very large ice cream cone and determining it’s an ice cream cart. </P>
-        <p>While features are used to separate the items in datasets, it’s the classifier that determines how the data inputs will be seperated. A classifier is the way in which the robot observes the items of ice cream cones and ice cream carts and subsequently categorize these items. </p>
-        <p>The robot, for example, can use the same feature -- weight -- but different methods of classification. It can map the ice cream carts and ice cream cones based on their weight and make its decision based on where said item is located on the graph. It can decide a specific weight beforehand -- say 500 grams -- and ask if each item it encounters weighs more than this limitation (for specific classifiers, please check out our glossary). </p>
-        <h2 id="explainer-data-types">Type of data being analysed for inference</h2>
-        <p>We offer a categorization of data sources used for the purposes of gender and sexuality inference in the works surveyed. Using Hong Yang and Yali Yaun’s, A General Gender Inference Method Based on Web as reference, we have identified five broad categories of data types used:</p>
-        <p>(1) Text-based approaches: This method analyzes the language choices of a user from sources such as their blog posts or profiles. This method is dependent on the assumption that language is intrinsically linked to demographics -- different groups of people using language differently. Research in sociolinguistics has demonstrated the differences in lexical choice and other linguistic features in discourse based on factors such as age, gender, race, class, sexuality and geography. Such analysis is building off of previous language work that utilized sociolinguistic models to discover latent speaker/author attributes from various mediums (Garera and Yarowsky for example examined conversational speech and writing styles. Bocklet et al examine audio recordings. Yan and Yan as well as Mukherjee and Liu classify authors’ gender based on their web blog postings). More recently, textual user-generated content from social media sites such as Twitter and Facebook are being utilized for purposes of demographic inference. It should be noted that such methods often use a large number of features and this necessitate larger computational complexity. </p>
-        <p>(2) Visual-based approach: a language independent approach that utilizes visual information created or selected by users. In the case of gender and sexuality classification, this approach generally utilizes images (such as those posted by users on their social media accounts) or colours (Alowibdi et al. for example discern gender by analyzing the background color of a user’s profile page on twitter). </p>
-        <p>(3) Name-based approach: utilizing people’s names to infer their gender. This approach requires a pre-existing database of names and associated genders from which a classifier can refer to. </p>
-        <p>(4) Physical features approach: Analyzing a person’s facial features, body features, or their gate for demographic inference. </p>
-        <p>(5) Combination features approach: Aggregating and combining the various approaches listed above with the assumption that they will offer greater accuracy in inference. </p>
-=======
         <p>Take for example a dataset composed entirely of ice cream cones and ice cream carts. How would a robot -- never before having seen either ice cream cones or ice cream carts before -- infer if each item has the attribute of being an ice cream cone or ice cream cart?</p>
         <p>At the simplest level, this robot would want to determine a parameter -- or feature -- that would best differentiate these items. It can utilize a number of features (such as shape, size, and texture) in combination with each other for the purposes of inference.</p>
         <p>We should keep in mind that although the use of number of features can result in more thorough decision making, the robot would have to spend more time considering each feature (of size, shape and texture) as it relates to an item.</p>
@@ -81,7 +60,6 @@
         <p><strong>(3) Name-based approach:</strong> Utilizing people’s names to infer their gender. This approach requires a pre-existing database of names and associated genders from which a classifier can refer to.</p>
         <p><strong>(4) Physical features approach:</strong> Analyzing a person’s facial features, body features, or their gate for demographic inference.</p>
         <p><strong>(5) Combination features approach:</strong> Aggregating and combining the various approaches listed above with the assumption that they will offer greater accuracy in inference.</p>
->>>>>>> 630fa08e12c7d8ad7a06ecd0a4ee3bff8fd5f81b
       </div>
     </main>
     <div class="container footer">
