@@ -355,165 +355,190 @@
 </div>
 </div>
 </div>
+</div>
 <!-- Card 13 -->
 <div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c6'>
-  <a class='open' href='#c6'>
-  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
-    Classifier: support vector machine<br>
-    Features: text features (twitter user language in tweets and profiles)<br>
-    <br><br>
-    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-    </p>
-  </div>
-</div></div>
+<div class='card' id='c10'>
+    <a class='open' href='#c10'>"Inferring Gender from Names on the Web: A Comparative Evaluation of Gender Detection Methods" by Fariba Karimi, Claudia Wagner, Florian Lemmerich, Mohsen Jadidi and Markus Strohmaier (2016)</a>
+    <div class='content'>
+        <h3><a href="https://arxiv.org/abs/1603.04322" target="_blank">Inferring Gender from Names on the Web: A Comparative Evaluation of Gender Detection Methods</a><br />
+            Fariba Karimi, Claudia Wagner, Florian Lemmerich, Mohsen Jadidi and Markus Strohmaier (2016)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong>Academic Paper, Gender, Name Features, Visual Features <br />
+            <strong>Classifier:</strong>Classifier: Sexmachine, Genderize, Face++<br />
+            <strong>Features:</strong> Combination features (name and facial images) <br />
+            <strong>Citation:</strong> Karimi, F., Wagner, C., Lemmerich, F., Jadidi M., Strohmaier, M.: Inferring gender from names on the web: a comparative evaluation of gender detection methods. In: Proceedings of the 25th International Conference Companion on World Wide Web, pp. 53-54 (2016)
+		<br /><br />
+        </h6>
+        <br />
+	<p>Karimi et al. present a name features-based gender inference model that they combine with the web-based image retrieval of facial images. The authors explore frequently used name-based gender classification tools (Sexmachine and Genderize) and utilize a labeled dataset of names of varying origins to evaluate and compare them based on accuracy and bias. They also utilized Face++ in order to infer gender by collecting the first five Google thumbnails from a full name search query -- applying image recognition on the resultant thumbnails. They further combined the more accurate gender inference tool -- Genderize -- with Face++ in two ways: with both methods given equal weight and where Genderize is used first and facial recognition is used for unidentified names. Both methods achieve high accuracy, with the method that uses Genderize first achieving an accuracy of 92% for inference. They propose this method as it increases the accuracy of gender detection across varying geographies. Considering the fact that popular names of non-Western industrialized countries (such as China, South Korea or Brazil) are not covered sufficiently in name databases, the combination of name and image-based gender inference methods can help reduce this bias.</p>
+</div>
+</div>
+</div>
 <!-- Card 14 -->
+<div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c14'>
+    <a class='open' href='#c14'>"A General Gender Inference Method Based on Web" by Hong Yang and Yali Yuan (2016)</a>
+    <div class='content'>
+        <h3><a href="http://cstm.cnki.net/stmt/TitleBrowse/KnowledgeNet/LRCM201611001050?db=STMILAST2017" target="_blank">A General Gender Inference Method Based on Web</a><br />
+            Hong Yang and Yali Yuan (2016)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:Academic Paper, Gender, SVM</strong> <br />
+            <strong>Classifier: Support vector machine</strong> <br />
+            <strong>Features: Combination features (representative keywords derived from web queries using a person's name)</strong> <br />
+            <strong>Citation:Yang, H., Yaun, Y.: A general gender inference method based. In: Proceedings of the 2016 2nd International Conference on Artificial Intelligence and Industrial Engineering (2016)</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p>Yang and Yuan propose a general method for efficiently and accurately inferring gender from unlabelled data, arguing that few existing studies have considered measuring gender using an approach that facilitates interoperability. They also argue that by using the big data potential of the Web they can source enough information to automatically infer a person’s gender. They constructed what they call a “smart query” -- a query composed of a person’s name and representative gender keywords (in this study those keywords were “her” and “his”) -- to search engines. The query (constructed as “name his OR her”) finds the representative keywords for documents describing a user with a specific gender and is used with a supervised SVM classification model for inference. Yang and Yuan also present a voting framework to efficiently incorporate various alternative methods of general inference (facial recognition and name-list method), where each predictor model gives its inference result as a “vote”, with the most voted gender label as the final prediction. While their web-based method performs better than the other methods evaluated in isolation (achieving 93.38% accuracy), they demonstrate that the accuracy performance improves slightly when this method is used as part of their voting framework, improving the performance to 96.9%. </p>
+</div>
+</div>
+</div>
 <!-- Card 15 -->
-<div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
-</div>
-<!-- Card 16 -->
 <div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c6'>
-  <a class='open' href='#c6'>
-  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
-    Classifier: support vector machine<br>
-    Features: text features (twitter user language in tweets and profiles)<br>
-    <br><br>
-    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-    </p>
-  </div>
-</div></div>
-<!-- Card 17 -->
-<div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
-<!-- Card 18 -->
-<div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c15'>
+    <a class='open' href='#c15'>"Piloting a Theory-Based Approach to Inferring Gender in Big Data" by Jason Radford (2017)</a>
+    <div class='content'>
+        <h3><a href="https://ieeexplore.ieee.org/document/8258555/" target="_blank">Piloting a Theory-Based Approach to Inferring Gender in Big Data</a><br />
+            Jason Radford (2017)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords: Academic Paper, Gender, Gender Systems Theory</strong> <br />
+            <strong>Classifier: Topic and behaviour models </strong> <br />
+            <strong>Features: Text features (text derived from social media, websites and other source materials)</strong> <br />
+            <strong>Citation: Radford, J.: Piloting a theory-based approach to inferring gender in big data. In:  Proceedings of the IEEE International Conference on Big Data (2017)</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p>Radford, advocating for an alternative approach to gender inference, develops a model to measure and predict gender based on gender systems theory. This theory posits that gender is constructed on three levels: at the individual level, the interactional level and the institutional level. He suggests that the scalar component of gender construction applied to a gender inference model would render this model more interoperable across different types of source materials, as gender inference being done differently according to the context. Based on this theory, Radford creates gender measurement models for five different source materials: (1) blog posts, (2) tweets, (3) crowdfunding essays, (4) movie scripts, and (5) professional writing. The author tests the models’ accuracy in measuring gender for each of these source materials with machine learning topic and behaviour models. Comparing the result with more standard prediction models, Radford discovers that such measurement models of gender are if not as accurate, sometime more accurate than the standard prediction models. </p>
 </div>
-<!-- Card 19 -->
+</div>
+</div>
+</div>
+<!-- Card 16 
 <div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c6'>
-  <a class='open' href='#c6'>
-  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
-    Classifier: support vector machine<br>
-    Features: text features (twitter user language in tweets and profiles)<br>
-    <br><br>
-    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-    </p>
-  </div>
-</div></div>
-<!-- Card 20 -->
-<div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
-<!-- Card 21 -->
-<div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c16'>
+    <a class='open' href='#c16'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
 </div>
+</div>
+</div>
+<!-- Card 17 
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c17'>
+    <a class='open' href='#c17'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
+</div>
+</div>
+</div>
+<!-- Card 18 
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c18'>
+    <a class='open' href='#c18'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 19 
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c19'>
+    <a class='open' href='#c19'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
+</div>
+</div>
+</div>
+<!-- Card 20 
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c20'>
+    <a class='open' href='#c20'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
+</div>
+</div>
+</div>
+<!-- Card 21 
+<div class= 'lit_body'>
+<div class="mix svm txt">
+<div class='card' id='c21'>
+    <a class='open' href='#c21'>""</a>
+    <div class='content'>
+        <h3><a href="" target="_blank"></a><br />
+            Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> <br />
+            <strong>Classifier:</strong> <br />
+            <strong>Features:</strong> <br />
+            <strong>Citation:</strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p></p>
+</div>
+</div>
+</div>
+</div>-->
 </main>
 <div class="container footer">
     <span style=""float:left"><a href="http://bd4d.net/" target="_blank"><img src="img/bd4d_logo.png" alt="Big Data for Development Network" width="200px" /></a></span>
