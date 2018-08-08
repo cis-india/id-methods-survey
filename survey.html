@@ -207,15 +207,16 @@
         </h6>
         <br />
         <p>Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-	</div>
-</div></div>
+</div>
+</div>
+</div>
 <!-- Card 6 -->
 <div class="mix svm txt">
 <div class='card' id='c6'>
   <a class='open' href='#c6'> "Language Independent Gender Classification on Twitter" by Jalal S. Alowibdi, Ugo A. Buy, and Philip Yu (2013)
 </a>
     <div class='content'>
-        <h3><a href="https://dl.acm.org/citation.cfm?id=2492632" target="_blank">"Language Independent Gender Classification on Twitter</a><br />
+        <h3><a href="https://dl.acm.org/citation.cfm?id=2492632" target="_blank">Language Independent Gender Classification on Twitter</a><br />
             Jalal S. Alowibdi, Ugo A. Buy, and Philip Yu (2013)</h3>
         <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
         <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features 
@@ -227,61 +228,72 @@
 		<br /><br />
         </h6>
         <br />
-        <p>Alowidbi et al., recognizing that the vast majority of research for gender inference and classification on Twitter is language dependent, present a language independent inference model that predicts gender using five color-based features extracted from users’ Twitter profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color, and (5) sidebar border color. They preprocess colors harvested from 53,326 Twitter profiles, normalizing these colors into five-color based features. Based on this dataset, they performed a number of experiments with data subsets as well as with different classifiers to determine accuracy. They conclude that utilizing solely five color features (what they refer to as quantization) can provide reasonably accurate gender prediction, with the naive bayes/decision tree hybrid classifier achieving the highest overall accuracy of 71.4%. 
+        <p>Alowidbi et al., recognizing that the vast majority of research for gender inference and classification on Twitter is language dependent, present a language independent inference model that predicts gender using five color-based features extracted from users’ Twitter profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color, and (5) sidebar border color. They preprocess colors harvested from 53,326 Twitter profiles, normalizing these colors into five-color based features. Based on this dataset, they performed a number of experiments with data subsets as well as with different classifiers to determine accuracy. They conclude that utilizing solely five color features (what they refer to as quantization) can provide reasonably accurate gender prediction, with the naive bayes/decision tree hybrid classifier achieving the highest overall accuracy of 71.4%. </p>
 </div>
-</div></div>
+</div>
+</div>
+</div>
 <!-- Card 7 -->
 <div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c6'>
-  <a class='open' href='#c6'>
-  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
-    Classifier: support vector machine<br>
-    Features: text features (twitter user language in tweets and profiles)<br>
-    <br><br>
-    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-    </p>
-  </div>
-</div></div>
+<div class='card' id='c7'>
+    <a class='open' href='#c5'>"Gender Inference of Twitter Users in Non-English Contexts" by Morgane Ciot, Morgan Sonderegger and Derek Ruths (2013) </a>
+    <div class='content'>
+        <h3><a href="https://aclanthology.coli.uni-saarland.de/papers/D13-1114/d13-1114" target="_blank">Gender Inference of Twitter Users in Non-English Contexts</a><br />
+             Morgane Ciot, Morgan Sonderegger and Derek Ruths (2013) </h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, SVM<br />
+            <strong>Classifier:</strong> Support vector machine<br />
+            <strong>Features:</strong> Text features (Twitter user language in tweets and profiles)<br />
+            <strong>Citation:</strong> Ciot, M., Sonderegger, M., Ruths, D.: Gender inference of twitter users in non-English contexts. In: Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, pp. 19-21 (2013)
+<br /><br />
+        </h6>
+        <br />
+        <p>Ciot et al. set out to infer gender from non-english based twitter content with the aim of understanding how men and women use language differently across cultures. They work with a sample comprised of genetically unrelated languages (Japanese, Indonesian, Turkish and French) and run an SVM classifier to determine its performance across these languages. They call their model language agnostic as given a labeled set of users and tweets in a particular language, a model can be built without any knowledge of the structure or content of the language itself. Each of their language gender models was comprised of a different set of language agnostic features (such as top words, top n-grams, top hashtags, frequency of tweets, retweets, etc.). Classifier accuracy levels vary across languages: classifier accuracy was comparable on French and Indonesian while the Turkish language performed the best. In contrast, gender in Japanese could not be reliably inferred with reasonable accuracy -- the authors calling for better ways to accommodate the complex orthography and syntax based mechanisms of language. The authors conclude that when developing a language gender model, language-specific features should be considered as their inclusion will boost accuracy. </p>
+</div>
+</div>
+</div>
 <!-- Card 8 -->
 <div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c8'>
+    <a class='open' href='#c8'>"What’s in a Name? Using First Names as Features for Gender Inference in Twitter" by Wendy Liu and Derek Ruths (2013) </a>
+    <div class='content'>
+        <h3><a href="https://www.aaai.org/ocs/index.php/SSS/SSS13/paper/view/5744" target="_blank">What’s in a Name? Using First Names as Features for Gender Inference in Twitter</a><br />
+            Wendy Liu and Derek Ruths (2013) </h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Name Features, SVM<br />
+            <strong>Classifier:</strong> Support vector machine<br />
+            <strong>Features:</strong> Name features (self reported first name of Twitter users)<br />
+            <strong>Citation:</strong> Liu, W., Ruths, D.: What’s in a name? Using first names as features for gender inference in twitter. In: AAAI Spring Symposium Series (2013)
+		<br /><br />
+        </h6>
+        <br />
+	    <p>In this paper, Liu and Ruths study the incremental value of using a Twitter user’s name as a feature for gender inference. They achieve this by designing and implementing 2 different gender inference methods that utilize the user’s self-reported first name in varying ways.They derive a gender name association score utilizing the name distributions collected from the US census. This score is based on the logic that there are names that are very specific to a females or males while other are common among both genders. In one method, this name association score was included as a feature  and integrated into a text features based classifier while in the other, this score was used as a threshold, determining whether or not to follow up with a classifier (different thresholds were tested).The authors found that both methods that incorporate the name information outperform the baseline classification method devoid of name features. The threshold approach only made a modest improvement in the accuracy of gender inference compared to the integrated method. The authors explain this by suggesting the majority of names are strongly gendered or unknown. 
+</p>
+</div>
+</div>
+</div>
 <!-- Card 9 -->
 <div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c9'>
+    <a class='open' href='#c9'>"Say it with Colors: Language-Independent Gender Classification on Twitter" by Jalal S. Alowibdi, Ugo A. Buy and Philip S. Yu (2014)</a>
+    <div class='content'>
+        <h3><a href="https://link.springer.com/chapter/10.1007/978-3-319-13590-8_3#citeas" target="_blank">Say it with Colors: Language-Independent Gender Classification on Twitter</a><br />
+            Jalal S. Alowibdi, Ugo A. Buy and Philip S. Yu (2014)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Decision Tree, Probabilistic Neural Network, Naive Bayes, Visual Features <br />
+            <strong>Classifier:</strong> Probabilistic neural network, decision tree, naive bayes, naive bayes/decision tree hybrid
+<br />
+            <strong>Features:</strong> Visual features (color based features extracted from users’ Twitter profiles)<br />
+            <strong>Citation:</strong> Alowibdi J. S., Buy U. A., Yu P. S.: Say it with colors: language-independent gender classification on twitter. In: Kawash J. (eds) Online Social Media Analysis and Visualization. Springer, pp 47-62 (2014) 
+		<br /><br />
+        </h6>
+        <br />
+        <p>Alowibdi et al. explore gender classification methods independent of language. Using color-based features extracted from Twitter, they attempt gender inference based on a user’s color preference. They harvest colour data from Twitter across 34 different languages -- specifically the five color fields that allow users to choose colors for their profiles: (1) background color, (2) text color, (3) link color, (4) sidebar fill color and (5) sidebar border color. They normalize this data through a quantization and sorting procedure to reduce the number of color features, and apply different classifiers to this dataset to test the validity of their approach. They also test different subsets of this data in order to account for the existence of predefined designs in the Twitter user set up. They get the highest accuracy with the naive bayes/decision tree hybrid with the best results achieved when they excluded profiles using the 19 predefined designs. Despite the fact that a large portion of Twitter users do not change the default colors of their Twitter profile, the authors conclude that using color features can reasonably infer gender.
+	    </p>
+	</div>
+</div>
+</div>
 </div>
 <!-- Card 10 -->
 <div class= 'lit_body'>
