@@ -131,8 +131,7 @@
             <strong>Keywords:</strong> Academic Paper, Gender, Twitter, SVM, stacked SVM, Text Features<br />
             <strong>Classifier:</strong> Support vector machine<br />
             <strong>Features:</strong> Text features (Twitter user language in tweets and profiles)<br />
-            <strong>Citation:</strong>
-            <br /><br />
+            <strong>Citation:</strong> Rao, D., Yarowsky, D.: Detecting latent user properties in social media. In: Proceedings of the NIPS MLSN Wokshop (2010)<br /><br />
         </h6> 
         <p>Rao and Yarowsky set out to infer the gender, age and political orientation of Twitter users utilizing a stacked SVM classification method (combining SVM models) over a set of features. The authors emphasize the importance of language in identifying latent user attribute and propose a mixture of lexical and sociolinguistic-based feature for facilitating classification of Twitter users based on their informal textual communication.<p>
         <p>They utilize user’s status messages as a means of inference. They test and compare 3 different classification models: (1) a sociolinguistic feature model: where digital socio-linguistic cues such as the use of emoticons or certain punctuation (ellipses and exclamation marks) are used as features; (2) a lexical n-gram model: where the unigram and bigram of the tweet text was derived and; (3) a stacked model that’s features were derived from the predictions of the previous 2 models.</p>
@@ -144,13 +143,13 @@
 <div class='card' id='c2'>
     <a class='open' href='#c2'>"Classifying Latent User Attributes in Twitter" by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010)</a>
     <div class='content'>
-        <h3><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.297.7528&rep=rep1&type=pdf" target="_blank">Classifying Latent User Attributes in Twitter</a><br />
+        <h3><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.208.5011" target="_blank">Classifying Latent User Attributes in Twitter</a><br />
         John D. Burger, John Henderson, George Kim and Guido Zarella (2011)</h3>
         <h6><a href='#'>Go back to the survey page</a><br /><br />
             <strong>Keywords:</strong> Academic Paper, Gender, Twitter, Text Features, SVM<br />
             <strong>Classifier:</strong> Support vector machine<br />
             <strong>Features:</strong> Text features (Twitter user language in tweets and profiles)<br />
-            <strong>Citation:</strong> Rao, D., Yarowsky, D., Shreevats, A., Gupta, M: Classifying latent user attributes in twitter. In: Proceedings of the 2nd International Workshop on Search and Mining User-Generated Contents, pp. 37-44 (2010)<br /><br />
+            <strong>Citation:</strong> Rao, D.,  Yarowsky, D., Shreevats, A., Gupta, M,: Classifying latent user attributes in twitter. In: Proceedings of the 2nd International Workshop on Search and Mining User-Generated Contents, pp. 37-44 (2010)<br /><br />
         </h6> 
         <p>Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.</p>
     </div>
@@ -160,7 +159,7 @@
 <div class='card' id='c3'>
     <a class='open' href='#c3'>"Discriminating Gender on Twitter" by John D. Burger, John Henderson, George Kim and Guido Zarella (2011)</a>
     <div class='content'>
-        <h3><a href="https://www.mitre.org/publications/technical-papers/discriminating-gender-on-twitter" target="_blank">Discriminating Gender on Twitter</a><br />
+        <h3><a href="https://dl.acm.org/citation.cfm?id=2145568" target="_blank">Discriminating Gender on Twitter</a><br />
         John D. Burger, John Henderson, George Kim and Guido Zarella (2011)</h3>
         <h6><a href='#'>Go back to the survey page</a><br /><br />
             <strong>Keywords:</strong> Academic Paper, Gender, Twitter, Combination Features<br />
@@ -184,7 +183,7 @@
         <h6><strong>Keywords:</strong> Academic Paper, Gender, Twitter, Text Features, SVM, Homophily<br />
             <strong>Classifier:</strong> Support vector machine<br />
             <strong>Features:</strong> Text features (twitter user language in tweets and profiles as well as user’s neighbourhoods)<br />
-            <strong>Citation:</strong>
+            <strong>Citation:</strong> Burger, J. D., Henderson, J., Kim, G., Zarella G.: Discriminating gender on twitter. In: Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 1301-1309 (2011)
         </h6>
         <br />
         <p>Zamal et al. infer a number of latent attributes -- specifically author, age and political affiliation -- of Twitter users based on their tweets. They further then evaluate the extent of which features related to Twitter user’s neighbourhoods (such as their closest and least popular friends on the platform) can improve the overall accuracy of inference. For gender ifnerrence, the authors used a labelled dataset of 400 Twitter users along with what Zamal et al. refer to as the user’s friends -- as opposed to their followers. For each of these users and their friends, the most recent 1000 tweets were collected and used for the classification model. While the augmenting features of user’s Twitter neighbourhoods was found to improve inference accuracy for both age and political orientation (by at least 3 percent), gender demonstrated no statistically significant improvement of inference. Zamal et al. concluded that improvements in inference using neighbourhood related features was dependent on the assoritivity of an attribute (with gender reported to have low assoritivity in online and physical networks).</p>
