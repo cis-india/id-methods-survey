@@ -125,7 +125,7 @@
 <div class='card' id='c1'>
     <a class='open' href='#c1'>"Detecting Latent User Properties in Social Media" by Delip Rao and David Yarowsky (2010)</a>
     <div class='content'>
-        <h3><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.364.4449" target="_blank">JASMetecting Latent User Properties in Social Media</a><br />
+        <h3><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.364.4449" target="_blank">Detecting Latent User Properties in Social Media</a><br />
             Delip Rao and David Yarowsky (2010)</h3>
         <h6><a href='#'>Go back to the survey page</a><br /><br />
             <strong>Keywords:</strong> Academic Paper, Gender, Twitter, SVM, stacked SVM, Text Features<br />
@@ -298,55 +298,62 @@
 <!-- Card 10 -->
 <div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c6'>
-  <a class='open' href='#c6'>
-  Using Social Media to Infer Gender Composition from Commuter Populations by Wendy Liu, Faiyaz Al Zamal and Derek Ruths (2012)
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-    Keywords: Academic Paper, Gender, Twitter, Text Features, SVM<br>
-    Classifier: support vector machine<br>
-    Features: text features (twitter user language in tweets and profiles)<br>
-    <br><br>
-    Liu et al. use the Twitter posts of commuters in order to infer the gender makeup of those taking different modes of transportation in Toronto, Canada. They identified popular Twitter accounts dedicated to broadcasting news for various commuter groups in the Toronto region (specifically, automobiles, public transit and biking). For each of these account, the profile and most recent 1000 tweets of each follower with a public account was attained. For each commuter group, this gender classifier was trained on labeled users and then applied to the remaining users, incorporating features such as the frequency of words, hashtags of tweets. The results were compared with Canadian census data to evaluate accuracy, and it was determined that the estimate obtained for all 3 commuter groups reflected general demographic patterns reported in the census. 
-    </p>
-  </div>
-</div></div>
+<div class='card' id='c10'>
+    <a class='open' href='#c10'>"Gender in Twitter: Styles, Stances, and Social Networks" by David Bamman, Jacob Eisenstein and Tyler Schnoebelen (2014)</a>
+    <div class='content'>
+        <h3><a href="https://arxiv.org/abs/1210.4567v2" target="_blank">Gender in Twitter: Styles, Stances, and Social Networks</a><br />
+           David Bamman, Jacob Eisenstein and Tyler Schnoebelen (2014)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong>Academic Paper, Gender, Twitter, Text Features<br />
+            <strong>Classifier:</strong>Bag-of-words predictive model<br />
+            <strong>Features: Text features (twitter user language in tweets as well as user’s network)</strong> <br />
+            <strong>Citation: Bamman, D., Eisenstein, J., Schnoebelen, T.: Gender in twitter: styles, stances and social networks. In: Journal of Sociolinguistics, 18, pp 135-160 (2014) </strong> 
+		<br /><br />
+        </h6>
+        <br />
+	<p>Bamman et al., recognizing the tendency of gender inference models to adopt binary notions of gender and oversimplified assumptions about its relationship with language, propose an alternative more “nuanced” gender inference model. They combine computational methods with social theory, examining the social network of 14,464 Twitter users and utilize and a text-based gender classifier that achieves an 88% accuracy in gender prediction. They also correlate the output of their classification model with the gender composition of the Twitter user’s network. Through this, they determine that gender homophily correlates with the use of gendered language (i.e. the more gendered a user’s language, the more gendered their social network). Furthermore, Individuals whose gender is classified incorrectly have social networks that are much less homophilous than those of the individuals that the classifier gets right. Significantly, the authors don’t see misclassified individuals as outliers but rather as individuals who do gender differently, and a such influencing their linguistic choices and social behaviour. They suggest that there are multiple gendered styles and that the performance of popular gender norms in language is part of a gendered persona that shapes individual interactions.However, they are adamant, that the addition of social network information does not improve gender classification as these outliers are not the result of statistical aberration, but rather, indicate individuals who have adopted a persona different then larger norms. They suggest that it is this persona shapes their social network connection just as it shaped their linguistic resources.</p>
+</div>
+</div>
+</div>
 <!-- Card 11 -->
+<div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c11'>
+    <a class='open' href='#c11'>"Exploring Gender Prediction from Digital Handwriting" by Meryem Erbilek, Michael Fairhurst and Cheng Li (2016) </a>
+    <div class='content'>
+        <h3><a href="Exploring Gender Prediction from Digital Handwriting" target="_blank">Exploring Gender Prediction from Digital Handwriting</a><br />
+            Meryem Erbilek, Michael Fairhurst and Cheng Li (2016) </h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:</strong>Academic Paper, Gender, SVM <br />
+            <strong>Classifier:</strong> Support vector machine, naive bayes, k-nearest neighbour<br />
+            <strong>Features:</strong> Text features (digitised handwriting data)<br />
+            <strong>Citation:</strong> Erbilek, M., Fairhurst, M., Li, C.: Exploring gender prediction from digital handwriting. In: Proceedings of the Signal Processing and Communication Application Conference, (2016)
+		<br /><br />
+        </h6>
+        <br />
+	<p>Erbilek et al. explore the gender prediction capacity of digitised handwriting data (in this case, specifically handwriting data captured from a digitising tablet) based on different data content sources, classifiers and features. They analyze features extracted from digital handwriting samples according to demographic characteristics and different handwriting tasks (such as form-filling, text production, cheque completion, etc.). These tasks fall under one of two categories: (1) a fixed task where the subject is told what to write and (2) a variable task where the subject chooses what to write in response to a picture. Features identified as being commonly used in handwriting processing were extracted from the handwriting data to form a feature set consisting of dynamic and static features. After these features are normalized, gender prediction performance is evaluated by using all features with different classifiers. This study demonstrates that it is possible to use digital handwriting data to predict gender. According to the classifier and feature types use, as well as the handwriting task, different accuracy were achieved. The highest accuracy achieved was between 60% -80%. </p>
+</div>
+</div>
+</div>
 <!-- Card 12 -->
+<div class= 'lit_body'>
 <div class="mix svm txt">
-<div class='card' id='c2'>
-  <a class='open' href='#c2'>
-     Classifying Latent User Attributes in Twitter by Delip Rao, David Yarowsky, Abhishek Shreevats, & Manaswi Gupta (2010) 
-  </a>
-  <div class='content'>
-    <a class='close' href='#'>x</a>
-    <p>
-      Keywords: Academic Paper, Gender, Twitter, Text Features, SVM <br>
-      Classifier: support vector machine <br>
-      Features: text features (twitter user language in tweets and profiles)<br>
-      <br><br>
-      Rao et al., experimenting with various classification models, infer a number of latent author attributes from the posts, social network structure and communication behaviour of Twitter users. In regards to a user’s gender, they found that neither a user’s network structure (such as their follower-following ratio, follower frequency or following frequency) or their communication behaviour (response frequency, retweet frequency, tweet frequency) were helpful in its inference. They experimented with a number of predictive models looking specifically at text posts, seeing if they could infer gender exclusively from the content and style of a tweet’s author. They report results of 68.7% accuracy in regards to inferring gender using an ngram model alone that utilizes several million ngram features. Accuracy increases to 72.3% when this model is combined with a sociolinguistic-based features model that examines the lexical choice and other linguistic features such as the use of emoticons, use of internet slang, etc.). It should be noted that their dataset was assembled by finding twitter users with social network connections to unambiguously gendered organizations such as fraternities and sororities.
-      </p>
-  </div>
-</div></div>
+<div class='card' id='c12'>
+    <a class='open' href='#c12'>"Implementing ID3 Algorithm for Gender Identification of Bangladeshi People" by Sazzad Hossain, Shamsuzzaman, & Ahsan Habib (2016)</a>
+    <div class='content'>
+        <h3><a href="https://ieeexplore.ieee.org/document/7873136/" target="_blank">Implementing ID3 Algorithm for Gender Identification of Bangladeshi People</a><br />
+            Sazzad Hossain, Shamsuzzaman, & Ahsan Habib (2016)</h3>
+        <h6><a href='#'>Go back to the survey page</a><br /><br /></h6>
+        <h6><strong>Keywords:Academic Paper, Gender, Physical Features, Decision Tree</strong> <br />
+            <strong>Classifier: Decision tree</strong> <br />
+            <strong>Features: Physical features (height, weight, and age)</strong> <br />
+            <strong>Citation:</strong> Hossain, S., Shamsuzzaman, Habib, A.: Implementing ID3 algorithm for gender identification of Bangladeshi people. In: Proceedings of the International Conference on Electrical Engineering and Information Communication Technology, (2016)
+		<br /><br />
+        </h6>
+        <br />
+	<p>Hossain et al. apply a decision tree learning algorithm ID3 (Iterative Dichotomiser 3) in order to infer gender based on physical appearance attributes. The authors constructed a decision tree model from a dataset that included the age, weight, height and gender of a sample of Bangladeshi people aged 19-25. In the simplest terms, the ID3 algorithm tested each of the mentioned attributes, generating a decision tree based on the most useful attributes for classification. This derived decision tree was then used to predict a person’s gender based on their height, weight and age. Their method observed an accuracy of 85% to 95%. The authors make note of the interoperability of their algorithm as depending on the physical attributes of the country’s population, a specific algorithm for the country can be developed.</p>
+</div>
+</div>
 </div>
 <!-- Card 13 -->
 <div class= 'lit_body'>
