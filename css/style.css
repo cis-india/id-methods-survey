@@ -132,7 +132,7 @@ td{
 button {
     display: inline-block;
     position: absolute;
-    z-index:1000;
+    z-index:500;
     vertical-align: top;
     padding: .4em .8em;
     margin: 0;
